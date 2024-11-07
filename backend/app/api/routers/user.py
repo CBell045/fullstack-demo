@@ -29,7 +29,7 @@ def create_user(db: dbDep, user: UserCreate):
 
 
 @router.get("/{user_id}", response_model=UserRead)
-def get_user(user_id: str, db: dbDep):
+def get_user(user_id: int, db: dbDep):
     """
     Route to get a user.
     """
