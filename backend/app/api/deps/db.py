@@ -18,11 +18,8 @@ def get_db():
     Gets the database session
     """
 
-    db = engine.connect()
-    try:
+    with Session(engine) as db:
         yield db
-    finally:
-        db.close()
 
 
 dbDep = Annotated[Session, Depends(get_db)]  # pylint: disable=invalid-name

@@ -1,13 +1,12 @@
 sqlalchemy==2.0.31
 alembic==1.13.2
 email-validator==2.2.0
-fastapi==0.115.0
+fastapi[standard]==0.115.0
 pydantic==2.8.2
 phonenumbers==8.13.44
 pydantic-extra-types==2.10.0
 
 ruff==0.5.5
-pre-commit==3.8.0
 faker==26.2.0
 pylint==3.2.7
 mypy==1.11.2
